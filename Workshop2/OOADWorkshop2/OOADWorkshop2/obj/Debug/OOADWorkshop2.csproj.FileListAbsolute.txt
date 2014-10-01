@@ -1,0 +1,6 @@
+C:\Juhani\Studier\Repositories\OOADportfolio\Workshop2\OOADWorkshop2\OOADWorkshop2\bin\Debug\OOADWorkshop2.exe.config
+C:\Juhani\Studier\Repositories\OOADportfolio\Workshop2\OOADWorkshop2\OOADWorkshop2\obj\Debug\OOADWorkshop2.csprojResolveAssemblyReference.cache
+C:\Juhani\Studier\Repositories\OOADportfolio\Workshop2\OOADWorkshop2\OOADWorkshop2\bin\Debug\OOADWorkshop2.exe
+C:\Juhani\Studier\Repositories\OOADportfolio\Workshop2\OOADWorkshop2\OOADWorkshop2\bin\Debug\OOADWorkshop2.pdb
+C:\Juhani\Studier\Repositories\OOADportfolio\Workshop2\OOADWorkshop2\OOADWorkshop2\obj\Debug\OOADWorkshop2.exe
+C:\Juhani\Studier\Repositories\OOADportfolio\Workshop2\OOADWorkshop2\OOADWorkshop2\obj\Debug\OOADWorkshop2.pdb

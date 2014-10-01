@@ -1,0 +1,26 @@
+[Name]
+Juhani Aavanen
+[Id]
+130390
+[MemberNr]
+11
+[BoatType]
+Kayak/Canoe
+[BoatLength]
+4
+[End]
+[Name]
+Eddy Proca
+[Id]
+120389
+[MemberNr]
+15
+[BoatType]
+Sailboat
+[BoatLength]
+7
+[BoatType]
+Motorboat
+[BoatLength]
+3
+[End]
