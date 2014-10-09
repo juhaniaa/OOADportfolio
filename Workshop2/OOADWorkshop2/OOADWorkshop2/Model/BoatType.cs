@@ -8,10 +8,11 @@ namespace OOADWorkshop2.Model
 {
     enum BoatType
     {
-        Sail,
-        MotorSail,
-        MotorBoat,
-        Canoe,
-        Misc
+        Sailboat,
+        Motorsail,
+        Motorboat,
+        KayakCanoe,
+        Misc,
+        Count
     }
 }

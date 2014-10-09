@@ -11,20 +11,26 @@ namespace OOADWorkshop2.Model
     class MemberRepository
     {
         private string name;
-        private string id;
-        private string memberNr;
+        private string personalNumber;
+        private int id;
         public List<Member> members;
 
         private BoatType boatType;
         private string boatLength;        
         private List<Boat> boats;
+
+        private string path = "memberList.txt";
         
 
-        public MemberRepository(string path) {
-
+        public MemberRepository() 
+        {
             members = new List<Member>();
-           
+            if (!File.Exists(path)) {
+                saveAllMembers(members); // if the file doesn't exist, create it by saving the empty members list
+            }
+        }
 
+        public void LoadMembers() {
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
@@ -33,28 +39,27 @@ namespace OOADWorkshop2.Model
 
                 while ((line = reader.ReadLine()) != null)
                 {
-  
                     if (line == string.Empty)
                     {
                         continue;
                     }
 
-                    
+                    // om line innehåller ett status meddelande
                     if (line == "[Name]")
                     {
                         status = MemberReadStatus.Name;
                     }
 
                     
-                    else if (line == "[Id]")
+                    else if (line == "[PersonalNumber]")
                     {
-                        status = MemberReadStatus.Id;
+                        status = MemberReadStatus.PersonalNumber;
                     }
 
                     
-                    else if (line == "[MemberNr]")
+                    else if (line == "[Id]")
                     {
-                        status = MemberReadStatus.MemberNr;
+                        status = MemberReadStatus.Id;
                     }
 
                     
@@ -71,57 +76,36 @@ namespace OOADWorkshop2.Model
 
                     else if (line == "[End]")
                     {                 
-                        members.Add(new Member(name, id, memberNr, boats));
+                        members.Add(new Member(name, personalNumber, id, boats));
                     }
 
                     // line är ett namn, ett id, ett medlems nummer, en båttyp eller en båtlängd
                     else
                     {
-                      
+                        // om medlemmens namn kommer på nästa rad
                         if (status == MemberReadStatus.Name)
                         {
                             name = line;
                             boats = new List<Boat>();
                         }
 
-                        // om status är Id
-                        else if (status == MemberReadStatus.Id)
+                        // om personnummer kommer på nästa rad
+                        else if (status == MemberReadStatus.PersonalNumber)
                         {
-                            id = line;
+                            personalNumber = line;
                         }
 
-                        // om status är Member så...
-                        else if (status == MemberReadStatus.MemberNr)
+                        // om memdelmsid kommer på nästa rad
+                        else if (status == MemberReadStatus.Id)
                         {
-                            memberNr = line;
+                            id = int.Parse(line);
                             
                         }
 
                          // om status är BoatType så...
                         else if (status == MemberReadStatus.BoatType)
-                        {
-                            switch(line){
-                                case "Sailboat":
-                                    boatType = BoatType.Sail;
-                                    break;
-                                case "Motorsailer":
-                                    boatType = BoatType.MotorSail;
-                                    break;
-                                case "Motorboat":
-                                    boatType = BoatType.MotorBoat;
-                                    break;
-                                case "Kayak/Canoe":
-                                    boatType = BoatType.Canoe;
-                                    break;
-                                case "Misc":
-                                    boatType = BoatType.Misc;
-                                    break;
-
-                                default:
-                                    throw new ArgumentException();
-                            }
-                              
-                            
+                        {                           
+                            boatType = (BoatType)Enum.Parse(typeof(BoatType), line);                
                         }
 
                          // om status är BoatLength så...
@@ -131,10 +115,46 @@ namespace OOADWorkshop2.Model
 
                             boats.Add(new Boat(boatType, boatLength));
                         }
-
                     }
                 }
             }
+        }
+
+        public void saveAllMembers(List<Member> members)
+        {
+         
+            using (StreamWriter writer = new StreamWriter(path))
+            {
+                
+                // varje Memeber i members
+                for (int i = 0; i < members.Count; i++)
+                {
+                    Member memberToFile = members[i];       
+        
+                    writer.WriteLine("[Name]");
+                    writer.WriteLine(memberToFile.Name);
+
+                    writer.WriteLine("[PersonalNumber]");
+                    writer.WriteLine(memberToFile.PersonalNumber);
+
+                    writer.WriteLine("[Id]");
+                    writer.WriteLine(memberToFile.Id);
+
+                    if (memberToFile.Boats != null) { 
+
+                        // varje Boat i nuvarande Member
+                        foreach (Boat boatToFile in memberToFile.Boats)
+                        {
+                            writer.WriteLine("[BoatType]");
+                            writer.WriteLine(boatToFile.BoatType);
+                            writer.WriteLine("[BoatLength]");
+                            writer.WriteLine(boatToFile.BoatLength);
+                        }
+                    }
+
+                    writer.WriteLine("[End]");
+                }
+            }   
         }
     }
 }

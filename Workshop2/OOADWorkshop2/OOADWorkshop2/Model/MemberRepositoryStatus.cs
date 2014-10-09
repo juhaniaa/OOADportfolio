@@ -10,11 +10,10 @@ namespace OOADWorkshop2.Model
     {
         Indefinite,
         Name,
+        PersonalNumber,
         Id,
-        MemberNr,
         Boats,
         BoatType,
         BoatLength
-        
     }
 }

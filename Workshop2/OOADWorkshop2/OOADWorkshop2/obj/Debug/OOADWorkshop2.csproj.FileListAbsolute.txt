@@ -4,3 +4,7 @@ C:\Juhani\Studier\Repositories\OOADportfolio\Workshop2\OOADWorkshop2\OOADWorksho
 C:\Juhani\Studier\Repositories\OOADportfolio\Workshop2\OOADWorkshop2\OOADWorkshop2\bin\Debug\OOADWorkshop2.pdb
 C:\Juhani\Studier\Repositories\OOADportfolio\Workshop2\OOADWorkshop2\OOADWorkshop2\obj\Debug\OOADWorkshop2.exe
 C:\Juhani\Studier\Repositories\OOADportfolio\Workshop2\OOADWorkshop2\OOADWorkshop2\obj\Debug\OOADWorkshop2.pdb
+C:\Juhani\Studier\Repositories\OOADportfolio\Workshop2\OOADWorkshop2\OOADWorkshop2\bin\Debug\OOADWorkshop2.exe.manifest
+C:\Juhani\Studier\Repositories\OOADportfolio\Workshop2\OOADWorkshop2\OOADWorkshop2\bin\Debug\OOADWorkshop2.application
+C:\Juhani\Studier\Repositories\OOADportfolio\Workshop2\OOADWorkshop2\OOADWorkshop2\obj\Debug\OOADWorkshop2.exe.manifest
+C:\Juhani\Studier\Repositories\OOADportfolio\Workshop2\OOADWorkshop2\OOADWorkshop2\obj\Debug\OOADWorkshop2.application

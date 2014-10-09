@@ -8,30 +8,48 @@ namespace OOADWorkshop2.Model
 {
     class Boat
     {
-        private BoatType _boatType;
-        private string _boatLength;
-        public Boat(BoatType boatType, string boatLength) {
-            _boatType = boatType;
-            _boatLength = boatLength;
+        private BoatType boatType;
+        private string boatLength;
+
+        public BoatType BoatType
+        {
+            get { return boatType; }
+            set
+            {
+                boatType = value;
+            }
+        }
+
+        public string BoatLength
+        {
+            get { return boatLength; }
+            set { boatLength = value; }
+        }
+
+        public Boat(BoatType boatType, string boatLength) 
+        {
+            BoatType = boatType;
+            BoatLength = boatLength;
         }
 
         public string getBoatInfo() {
-            return typeToString(_boatType) + ", " + _boatLength;
+            return typeToString(boatType) + ", " + boatLength;
         }
 
-        private string typeToString(BoatType boatType) {
+        private string typeToString(BoatType boatType) 
+        {
             switch (boatType)
             {
-                case BoatType.Sail:
+                case BoatType.Sailboat:
                     return "Sailboat";
                 
-                case BoatType.MotorSail:
-                    return "Motorsailer";
+                case BoatType.Motorsail:
+                    return "Motorsail";
                     
-                case BoatType.MotorBoat:
+                case BoatType.Motorboat:
                     return "Motorboat";
 
-                case BoatType.Canoe:
+                case BoatType.KayakCanoe:
                     return "Kayak/Canoe";
                     
                 case BoatType.Misc:
