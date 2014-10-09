@@ -20,7 +20,6 @@ namespace OOADWorkshop2.Model
         private List<Boat> boats;
 
         private string path = "memberList.txt";
-        
 
         public MemberRepository() 
         {
@@ -35,8 +34,6 @@ namespace OOADWorkshop2.Model
             {
                 string line;
                 MemberReadStatus status = MemberReadStatus.Indefinite;
-
-
                 while ((line = reader.ReadLine()) != null)
                 {
                     if (line == string.Empty)

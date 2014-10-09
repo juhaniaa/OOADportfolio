@@ -1,0 +1,37 @@
+[Name]
+Eddy Proca
+[PersonalNumber]
+231
+[Id]
+1
+[BoatType]
+Sailboat
+[BoatLength]
+888
+[End]
+[Name]
+Juhani Aavanen
+[PersonalNumber]
+3522
+[Id]
+2
+[BoatType]
+Motorboat
+[BoatLength]
+7
+[BoatType]
+Misc
+[BoatLength]
+7
+[BoatType]
+Sailboat
+[BoatLength]
+My boat is 8 meters long
+[End]
+[Name]
+Nice Guy
+[PersonalNumber]
+x90
+[Id]
+3
+[End]

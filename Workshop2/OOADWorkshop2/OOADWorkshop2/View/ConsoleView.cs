@@ -9,12 +9,12 @@ namespace OOADWorkshop2.View
 {
     class ConsoleView
     {
-        private MemberList _ml;
+        private MemberList ml;
 
         internal MemberList Ml
         {
-            get { return _ml; }
-            set { _ml = value; }
+            get { return ml; }
+            set { ml = value; }
         }
 
         public ConsoleView(MemberList ml)
@@ -91,7 +91,7 @@ namespace OOADWorkshop2.View
         public void showCompact() 
         {
             writeHeader("Members Menu");
-            var compactList = _ml.viewAll();
+            var compactList = ml.viewAll();
 
             for (int i = 0; i < compactList.Count; i++) {
                 Console.Write(compactList[i].Id + ". ");
@@ -103,7 +103,7 @@ namespace OOADWorkshop2.View
         public void showExpanded()
         {
             writeHeader("Expanded Members Menu:");
-            var compactList = _ml.viewAll();
+            var compactList = ml.viewAll();
             for (int i = 0; i < compactList.Count; i++)
             {
                 Console.Write(compactList[i].Id + ". ");
@@ -124,7 +124,7 @@ namespace OOADWorkshop2.View
 
         public void showMember(int id) 
         {
-            var m = _ml.getMemberById(id);
+            var m = ml.getMemberById(id);
             Console.WriteLine(m.getExpandedMember());
         }
 
@@ -158,7 +158,7 @@ namespace OOADWorkshop2.View
         {
             writeHeader("Member boats");
 
-            List<Boat> boats = _ml.getMemberBoats(id);
+            List<Boat> boats = ml.getMemberBoats(id);
 
             for (int i = 0; i < boats.Count; i++)
             {
@@ -172,7 +172,7 @@ namespace OOADWorkshop2.View
         public void showBoatWithMenu(int boatIndex, int id)
         {
             writeHeader("Boat menu");
-            List<Boat> boats = _ml.getMemberBoats(id);
+            List<Boat> boats = ml.getMemberBoats(id);
             Console.WriteLine(boats[boatIndex - 1].getBoatInfo());
             
             showCrudMenu();

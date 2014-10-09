@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="OOADWorkshop2.exe" version="1.0.0.0" publicKeyToken="53b5acada9c6413a" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="OOADWorkshop2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="OOADWorkshop2.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OOADWorkshop2.exe" size="14848">
+      <assemblyIdentity name="OOADWorkshop2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4yVuq4gtRsizfaEI/zlECrX4aCs9aVCqJBCbu8DOx10=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="memberList.txt" size="358">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1piNdCsVgzJQcx7bwvM9P2NJklmN3WcNTA+UuWjuTxg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="OOADWorkshop2.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=JUHANI\Juhani" issuerKeyHash="fcd78a5409850755babaafd7fcffc194887301bf" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>U8I7kNPap0aPQtOcdDUVnI2lyYGltoilrrKtzoORefo=</DigestValue></Reference></SignedInfo><SignatureValue>mGlb3uvC3yHO6FY6nYb0XRAYpTkiKa3ObWT9zxYrS3hsOC6DVrQhAOAf8IVLnwGdXS4PenB5moe/u4KtNU2N76K9okKFcSfM+Ucq8410D757x6DftpPiNwZFwa8uLlGyM3dYLTNKRKeYvFGnUy8eOT2u3h7/JIe+I9bEJFAhszI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>s0MiAr7wvJAtu+Cfz2duqpn4WmKhhEnrySi8BCLA1AZ/F9kr00t8uKiWWPb+AfuWLZe0I4CYS276XTnopUlSjynh7yzFrC13zRzgASREsOiTrOdx2dY9zv/ZpOzzFpXsITK3zW1XzkhKB4z8Sm0iSiTqAagyhIGU+/mVS4jRYbM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="fa799183ceadb2aea588b6a581c9a58d9c1535749cd3428f46a7dad3903bc253" Description="" Url=""><as:assemblyIdentity name="OOADWorkshop2.exe" version="1.0.0.0" publicKeyToken="53b5acada9c6413a" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=JUHANI\Juhani</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>PLSxkhl5eoYawLKCsbDygQh+Z0Pp74lGT7lLEGMS95I=</DigestValue></Reference></SignedInfo><SignatureValue>QR8h5QleM+mU6n5auEtoUgSwbnJDzX+bUTVTXZ05cP4htv4/fd1x1vKpBJJEE00hgqIQJkNBVEaZOyEjzLvCU9zxhHeAoPQMW+7YGy4/5lHw0R5ffwQqADvPe3H3sqXqXvqI/bcipkhvOtEcd6eNWHRYulah4QUKy3rzZ+1GUts=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>s0MiAr7wvJAtu+Cfz2duqpn4WmKhhEnrySi8BCLA1AZ/F9kr00t8uKiWWPb+AfuWLZe0I4CYS276XTnopUlSjynh7yzFrC13zRzgASREsOiTrOdx2dY9zv/ZpOzzFpXsITK3zW1XzkhKB4z8Sm0iSiTqAagyhIGU+/mVS4jRYbM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBzTCCATagAwIBAgIQdeo9NRGG1YRKcJ469SlOQDANBgkqhkiG9w0BAQsFADAlMSMwIQYDVQQDHhoASgBVAEgAQQBOAEkAXABKAHUAaABhAG4AaTAeFw0xNDEwMDkwOTU0MTZaFw0xNTEwMDkxNTU0MTZaMCUxIzAhBgNVBAMeGgBKAFUASABBAE4ASQBcAEoAdQBoAGEAbgBpMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCzQyICvvC8kC274J/PZ26qmfhaYqGESevJKLwEIsDUBn8X2SvTS3y4qJZY9v4B+5Ytl7QjgJhLbvpdOeilSVKPKeHvLMWsLXfNHOABJESw6JOs53HZ1j3O/9mk7PMWlewhMrfNbVfOSEoHjPxKbSJKJOoBqDKEgZT7+ZVLiNFhswIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAD5YHevPmY/abfkJNSPo/17RK1IEfGXySM6cpmj483l6L/ZvMeO2pWmOUBKTNMsQXIfBVFaTz3+HqT2aHBRLCiuVL//S9Om8o2CvcXH/dULjMWErBXk19DR4OF3t4u/rizlQ18qelosWDG9zAJLCwQqdadEgmvym0vay+3zxBGbW</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
