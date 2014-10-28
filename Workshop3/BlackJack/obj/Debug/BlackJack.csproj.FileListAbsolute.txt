@@ -1,0 +1,5 @@
+C:\Juhani\Studier\Repositories\OOADportfolio\Workshop3\BlackJack\bin\Debug\BlackJack.exe
+C:\Juhani\Studier\Repositories\OOADportfolio\Workshop3\BlackJack\bin\Debug\BlackJack.pdb
+C:\Juhani\Studier\Repositories\OOADportfolio\Workshop3\BlackJack\obj\Debug\BlackJack.csprojResolveAssemblyReference.cache
+C:\Juhani\Studier\Repositories\OOADportfolio\Workshop3\BlackJack\obj\Debug\BlackJack.exe
+C:\Juhani\Studier\Repositories\OOADportfolio\Workshop3\BlackJack\obj\Debug\BlackJack.pdb
