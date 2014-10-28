@@ -1,6 +1,3 @@
-OOADportfolio
-=============
+Workshop 3 updated classdiagram 
 
-Course portfolio for IDV407
-
-Juhani Aavanen ja222qm
+https://github.com/epr/BlackJack1dv407/tree/master/BlackJackModel
