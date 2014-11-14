@@ -20,28 +20,22 @@ namespace OOADWorkshop2.Controller
         }
         public void MainMenu()
         {
-            
             cv.showMenu();
             var mc = cv.getMenuChoice();
-
             // Add new member
             if (mc == 1)
             {
-
                 var name = cv.getMemberName();
                 var personalNumber = cv.getMemberPersonalNumber();
-
                 ml.register(name, personalNumber);
                 MainMenu();
             }
-
             // Show all members in compact list
             else if (mc == 2)
             {
                 cv.showCompact();
                 showSpecificMember();
             }
-
             // Show all members in expanded list
             else if (mc == 3)
             {
@@ -53,7 +47,6 @@ namespace OOADWorkshop2.Controller
                 MainMenu();
             }
         }
-
         public void showSpecificMember()
         {
             var id = cv.getMenuChoice();
@@ -74,22 +67,17 @@ namespace OOADWorkshop2.Controller
                 }   
             }
         }
-
         public void memberMenuAction(int id)
         {
-            
             var choice = cv.getMenuChoice();
-
             if (choice == 0)
             {
                 MainMenu();
             }
-
             else if (choice == 1) // edit member
             {
                 var name = cv.getMemberName();
                 var personalNumber = cv.getMemberPersonalNumber();
-
                 var oldBoatList = ml.getMemberById(id).Boats;
                 ml.deleteMember(id);
                 ml.register(name, personalNumber, oldBoatList, id);
@@ -104,7 +92,6 @@ namespace OOADWorkshop2.Controller
             {
                 cv.showBoats(id);
                 showSpecificBoat(id);
-
             }
             else if (choice == 4) // add boat to member
             {
@@ -114,7 +101,6 @@ namespace OOADWorkshop2.Controller
                 MainMenu();
             }
         }
-
         public void showSpecificBoat(int id)
         {
             var choice = cv.getMenuChoice();
@@ -128,10 +114,8 @@ namespace OOADWorkshop2.Controller
                 boatMenuAction(id, choice);
             }
         }
-
         public void boatMenuAction(int id, int boatChoice)
         {
-            
             var choice = cv.getMenuChoice();
             var boatIndex = boatChoice - 1;
             var oldBoatType = (int)ml.getMemberBoats(id)[boatIndex].BoatType + 1;

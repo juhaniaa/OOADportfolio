@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OOADWorkshop2.exe" size="14848">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OOADWorkshop2.exe" size="15360">
       <assemblyIdentity name="OOADWorkshop2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>rpdQyZyfaLzZYKVNexVPMCuc0oXisjAhyZNvJGV6zTo=</dsig:DigestValue>
+        <dsig:DigestValue>FQLLIepiagPHXaP5eTuguYKiXxT0e7kPPQ4ftCIf4Gc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

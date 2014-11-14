@@ -1,63 +1,70 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
-  <Class Name="OOADWorkshop2.Controller.BoatClubMenu">
-    <Position X="8.25" Y="0.5" Width="1.5" />
+  <Class Name="OOADWorkshop2.Controller.BoatClubMenu" Collapsed="true">
+    <Position X="8.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAgAAACAAAAAAAAAAAAAQAAAAAAAIAAAAAAAIAQg=</HashCode>
+      <HashCode>AAACAgAAgCAAAAAAAAAAAABQAAAAAAAIAAAAAAAIAQg=</HashCode>
       <FileName>Controller\BoatClubMenu.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ConsoleView" />
+      <Property Name="MemberList" />
+    </ShowAsAssociation>
   </Class>
-  <Class Name="OOADWorkshop2.Model.Boat">
-    <Position X="3" Y="0.5" Width="1.5" />
+  <Class Name="OOADWorkshop2.Model.Boat" Collapsed="true">
+    <Position X="9" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAEAAQABAAFAAA=</HashCode>
       <FileName>Model\Boat.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="OOADWorkshop2.Model.Member">
-    <Position X="6.5" Y="0.5" Width="1.5" />
+  <Class Name="OOADWorkshop2.Model.Member" Collapsed="true">
+    <Position X="11.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACIAAAAAAAAAAAEAABAAQBAQAEAAAAAAAAAAAgAqA=</HashCode>
       <FileName>Model\Member.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="OOADWorkshop2.Model.MemberList">
-    <Position X="4.75" Y="0.5" Width="1.5" />
+  <Class Name="OOADWorkshop2.Model.MemberList" Collapsed="true">
+    <Position X="9" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgAAAgACAQAABAAAAAAAAAAgAAAAIAQgAAACIAAE=</HashCode>
       <FileName>Model\MemberList.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="OOADWorkshop2.Model.MemberRepository">
-    <Position X="10" Y="0.5" Width="1.5" />
+  <Class Name="OOADWorkshop2.Model.MemberRepository" Collapsed="true">
+    <Position X="11.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAIAAAAAAJAAAAAAADAAAAAAAEAAQAAAQABAAAAgA=</HashCode>
       <FileName>Model\MemberRepository.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="OOADWorkshop2.Program">
-    <Position X="1.25" Y="0.5" Width="1.5" />
+  <Class Name="OOADWorkshop2.Program" Collapsed="true">
+    <Position X="6.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BoatClubMenu" />
+    </ShowAsAssociation>
   </Class>
-  <Class Name="OOADWorkshop2.View.ConsoleView">
-    <Position X="11.75" Y="0.5" Width="1.5" />
+  <Class Name="OOADWorkshop2.View.ConsoleView" Collapsed="true">
+    <Position X="6.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAkAIEMAAAAAgAAAAAAAAAAAAAAQASQMAAiQAJAIAAA=</HashCode>
       <FileName>View\ConsoleView.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Enum Name="OOADWorkshop2.Model.BoatType">
-    <Position X="1.25" Y="1.75" Width="1.5" />
+  <Enum Name="OOADWorkshop2.Model.BoatType" Collapsed="true">
+    <Position X="4" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAgCAAAAAAgAAAAAAAAAAQAAAAAAAAAAAABAAAAAAA=</HashCode>
       <FileName>Model\BoatType.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="OOADWorkshop2.Model.MemberReadStatus">
-    <Position X="1.25" Y="3.75" Width="1.5" />
+  <Enum Name="OOADWorkshop2.Model.MemberReadStatus" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAQAABAAEAAAAAAAEACA=</HashCode>
       <FileName>Model\MemberRepositoryStatus.cs</FileName>

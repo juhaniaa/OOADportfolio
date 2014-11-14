@@ -10,18 +10,15 @@ namespace OOADWorkshop2.View
     class ConsoleView
     {
         private MemberList ml;
-
         internal MemberList Ml
         {
             get { return ml; }
             set { ml = value; }
         }
-
         public ConsoleView(MemberList ml)
         {
             Ml = ml;
         }
-        
         public void showMenu() 
         {
             writeHeader("Boat Club Menu");
@@ -29,13 +26,11 @@ namespace OOADWorkshop2.View
             Console.WriteLine("2. View compact list of members");
             Console.WriteLine("3. View expanded list of members");
         }
-
         public int getMenuChoice(int initial = 0)
         {
             if (initial == 0) // if no initial value is sent
             {             
                 string ret = Console.ReadLine();
-
                 try
                 {
                     return int.Parse(ret);
@@ -49,45 +44,37 @@ namespace OOADWorkshop2.View
             {
                 Console.WriteLine("Hit enter to keep the boat type or backspace to enter a new one.");
                 Console.Write(initial);
-              
                 var userAction = Console.ReadKey();
                 while ((userAction.Key != ConsoleKey.Enter) && (userAction.Key != ConsoleKey.Backspace))
                 {
                     Console.CursorLeft -= 1;
                     Console.Write(" ");
                     Console.CursorLeft -= 1;
-                    userAction = Console.ReadKey();
-                    
+                    userAction = Console.ReadKey();                    
                 }
-
                 if (userAction.Key == ConsoleKey.Backspace)
                 {
                     Console.Write(" ");
                     Console.CursorLeft -= 1;
                     initial = int.Parse(Console.ReadLine());
                 }
-
                 return initial;     
             }
         }
-
         public string getInput() 
         {
             return Console.ReadLine();
         }
-
         public string getMemberName() 
         {
             writeHeader("Input Name");
             return getInput();
         }
-
         public string getMemberPersonalNumber()
         {
             writeHeader("Input Personal Number");           
             return getInput();
         }
-
         public void showCompact() 
         {
             writeHeader("Members Menu");
@@ -95,11 +82,10 @@ namespace OOADWorkshop2.View
 
             for (int i = 0; i < compactList.Count; i++) {
                 Console.Write(compactList[i].Id + ". ");
-                Console.WriteLine(compactList[i].getCompactMember());
+                Console.WriteLine("{0}, #{1}, {2} st båtar.", compactList[i].Name, compactList[i].Id, compactList[i].Boats.Count);
             }
             writeFooter("0. Go back to main menu");
         }
-
         public void showExpanded()
         {
             writeHeader("Expanded Members Menu:");
@@ -111,7 +97,6 @@ namespace OOADWorkshop2.View
             }
             writeFooter("0. Go back to main menu");
         }
-
         public void showMemberWithMenu(int id)
         {
             writeHeader("Member Menu:");
@@ -121,39 +106,33 @@ namespace OOADWorkshop2.View
             Console.WriteLine("4. Add boat");
             writeFooter("0. Go back to main menu");
         }
-
         public void showMember(int id) 
         {
             var m = ml.getMemberById(id);
-            Console.WriteLine(m.getExpandedMember());
+            Console.WriteLine("{0}, #{1}, Personal Nr: {2}", m.Name, m.Id, m.PersonalNumber);
+            for (int i = 0; i < m.Boats.Count; i++)
+            {
+                Console.WriteLine("     {0}. {1}, {2}", i + 1, m.Boats[i].BoatType, m.Boats[i].BoatLength);
+            }
+            Console.WriteLine();
         }
-
         public void showCrudMenu()
         {
             Console.WriteLine();
             Console.WriteLine("1. Edit");
             Console.WriteLine("2. Delete");
         }
-
-        public void chooseMember() 
-        {
-            Console.WriteLine();
-            Console.WriteLine("ChooseMember:");
-        }
-
         public void writeHeader(string message)
         {
             Console.Clear();
             Console.WriteLine(message);
             Console.WriteLine();
         }
-
         public void writeFooter(string message)
         {
             Console.WriteLine();
             Console.WriteLine(message);
         }
-
         public void showBoats(int id) 
         {
             writeHeader("Member boats");
@@ -163,22 +142,18 @@ namespace OOADWorkshop2.View
             for (int i = 0; i < boats.Count; i++)
             {
                 Console.Write((i + 1) + ". ");
-                Console.WriteLine(boats[i].getBoatInfo());
+                Console.WriteLine("{0}, {1}", boats[i].BoatType, boats[i].BoatLength);
             }
             writeFooter("0. Go back to main menu");
-
         }
-
         public void showBoatWithMenu(int boatIndex, int id)
         {
             writeHeader("Boat menu");
             List<Boat> boats = ml.getMemberBoats(id);
-            Console.WriteLine(boats[boatIndex - 1].getBoatInfo());
-            
+            Console.WriteLine("{0}, {1}", boats[boatIndex - 1].BoatType, boats[boatIndex - 1].BoatLength);
             showCrudMenu();
             writeFooter("0. Go back to main menu");
         }
-
         public int getBoatType(int boatType = 0)
         {
             writeHeader("Choose boat type");    
@@ -189,7 +164,6 @@ namespace OOADWorkshop2.View
             Console.WriteLine("5. Misc");
             return getMenuChoice(boatType) - 1;
         }
-
         public string getBoatLength(string boatLength = null)
         {
             writeHeader("Input boat length");
@@ -199,7 +173,6 @@ namespace OOADWorkshop2.View
             }
             return getNewValue(boatLength);
         }
-
         public string getNewValue(string oldValue)
         {
             Console.Write(oldValue);
@@ -211,7 +184,6 @@ namespace OOADWorkshop2.View
                 Console.CursorLeft -= 1;
                 userAction = Console.ReadKey();
             }
-
             if (userAction.Key == ConsoleKey.Backspace)
             {
                 for (int i = 0; i < oldValue.Length; i++)
@@ -225,7 +197,6 @@ namespace OOADWorkshop2.View
                 }
                 oldValue = Console.ReadLine();
             }
-
             return oldValue;
         }
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOADWorkshop2.Model
 {
-    enum MemberReadStatus
+    enum MemberRepositoryStatus
     {
         Indefinite,
         Name,

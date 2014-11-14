@@ -83,8 +83,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
-    <None Include="ClassDiagram2.cd" />
     <None Include="OOADWorkshop2_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
